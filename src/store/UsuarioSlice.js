@@ -2,7 +2,10 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
     usuarios: [],
-    usuario: null,
+    usuario: [],
+    albumes:[],
+    fotos:[],
+    posts:[]
 }
 
 const UsuarioSlice = createSlice({
@@ -15,6 +18,15 @@ const UsuarioSlice = createSlice({
         setUsuario(state, action) {
             state.usuario = action.payload
         },
+        setAlbumes(state, action) {
+            state.albumes = action.payload
+        },
+        setFotos(state, action) {
+            state.fotos = action.payload
+        },
+        setPosts(state, action) {
+            state.posts = action.payload
+        },
         resetUsuario(state) {
             state.usuario = null
         },
@@ -24,7 +36,10 @@ const UsuarioSlice = createSlice({
 export const {
     resetUsuario,
     setUsuario,
-    setUsuarios
+    setUsuarios,
+    setAlbumes,
+    setFotos,
+    setPosts
 } = UsuarioSlice.actions
 
 export default UsuarioSlice.reducer

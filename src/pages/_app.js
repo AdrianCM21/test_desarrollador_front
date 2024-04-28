@@ -1,18 +1,23 @@
 // pages/_app.js
 import React from 'react';
 import { Provider } from 'react-redux';
-import {store} from '../store/index'
-import RootLayout from './layout';
-import './globals.css';
+import {store} from '../store/Index'
+import {RootLayout} from '../components/layouts/layout';
+import { CssBaseline } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import { mainTheme } from '@/config/themes/MainTheme';
 
-function MyApp({ Component, pageProps }) {
+const MyApp=({ Component, pageProps })=> {
+  const Layout = Component.layout || RootLayout;
 
   return (
     <Provider store={store}>
-        <RootLayout>
-            <Component {...pageProps} />
-        </RootLayout>
-      
+        <ThemeProvider theme={mainTheme}>
+          <CssBaseline />
+          <Layout>
+              <Component {...pageProps} />
+          </Layout>
+        </ThemeProvider>
     </Provider>
   );
 }
