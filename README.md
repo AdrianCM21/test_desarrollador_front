@@ -2,7 +2,7 @@
 
 Este proyecto fue creado con [Next.js](https://nextjs.org/).
 
-Este proyecto utiliza la API de [JSONPlaceholder](https://jsonplaceholder.typicode.com/) para obtener datos de usuarios, posts, fotos y álbumes. También utiliza [Redux ChartJS](https://www.npmjs.com/package/redux-chartjs) para los gráficos y permite la exportación de datos en formatos CSV y Excel.
+Este proyecto utiliza la API de [JSONPlaceholder](https://jsonplaceholder.typicode.com/) para obtener datos de usuarios, posts, fotos y álbumes. También utiliza Redux para el manejo de datos y [ChartJS](https://www.npmjs.com/package/redux-chartjs) para los gráficos y permite la exportación de datos en formatos CSV y Excel.
 
 ## Requisitos
 
