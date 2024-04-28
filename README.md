@@ -17,7 +17,7 @@ Versiones utilizadas:
 Primero, clona el repositorio:
 
 ```bash
-git clone https://github.com/AdrianCM21/usuarios_admin.git
+git clone https://github.com/AdrianCM21/usuarios_admin_front.git
 ```
 
 Luego, navega hasta el directorio del proyecto:
