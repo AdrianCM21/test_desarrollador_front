@@ -1,5 +1,5 @@
 import { AppBar, Toolbar, Typography, Box, Container } from "@mui/material";
-import { GraficoBarrasUsersPosts } from "../modals/GraficoBarrasUsersPosts";
+import { GraficoBarrasUsersPosts } from "../components/modals/GraficoBarrasUsersPosts";
 
 
 export const RootLayout = ({ children }) => {

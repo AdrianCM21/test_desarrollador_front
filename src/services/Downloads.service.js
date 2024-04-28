@@ -10,7 +10,7 @@ export const downloadCSV = async (datos) => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `datos-facturas-${fechaYMDHMS()}.csv`;
+    link.download = `CVS-Usuarios-${fechaYMDHMS()}.csv`;
     link.click();
   } catch (error) {
     return Promise.reject(error);
@@ -22,7 +22,7 @@ export const downloadExcel = async (datos) => {
     const worksheet = utils.json_to_sheet(datos);
     const workbook = utils.book_new();
     utils.book_append_sheet(workbook, worksheet, 'Sheet1');
-    writeFile(workbook, `datos-facturas-${fechaYMDHMS()}.xlsx`);
+    writeFile(workbook, `Excel-Usuarios-${fechaYMDHMS()}.xlsx`);
   } catch (error) {
     return Promise.reject(error);
   }

@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { Box, Button, Dialog, DialogActions, DialogContent, DialogTitle, Typography } from "@mui/material";
 import { styled } from '@mui/system';
 import ExportOutlined from '@mui/icons-material/ImportExport';
-import CsvIcon from '@mui/icons-material/AttachFile'; // Icono para CSV
-import ExcelIcon from '@mui/icons-material/TableChart'; // Icono para Excel
+import CsvIcon from '@mui/icons-material/AttachFile';
+import ExcelIcon from '@mui/icons-material/TableChart';
 import { downloadCSV, downloadExcel } from '@/services/Downloads.service';
 import { formatedTable } from '@/utils/formateds/formatedTable';
-// import { downloadExcel, downloadCSV } from '../../../../services/Invoices_list/Invoices_listService';
+
 
 
 const StyledDialogTitle = styled(DialogTitle)(({ theme }) => ({
@@ -61,7 +61,7 @@ export const ExportsCsvExcel = ({ datos }) => {
           <Box paddingTop={2} display="flex" flexDirection="column" alignItems="center">
 
             <Box paddingTop={2} display="flex" justifyContent="center">
-              <StyledButton variant="contained" startIcon={<CsvIcon />} onClick={handleExportCsv}>
+              <StyledButton variant="contained" startIcon={<CsvIcon />} onClick={() => handleExportCsv(datos)}>
                 Exportacion en CSV
               </StyledButton>
               <StyledButton variant="contained" startIcon={<ExcelIcon />} onClick={handleExportExcel}>

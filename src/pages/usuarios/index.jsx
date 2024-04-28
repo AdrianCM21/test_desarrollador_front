@@ -1,4 +1,5 @@
-import { ToolbarDataGrid } from "@/components/layouts/tablas/ToolbarDataGrid";
+
+import { ToolbarDataGrid } from "@/components/tablas/ToolbarDataGrid";
 import { useUsuarios } from "@/hooks/Usuarios"
 import { COLUMN_PROPS, createColumn } from "@/utils/TableCreate";
 import { RemoveRedEye } from "@mui/icons-material";

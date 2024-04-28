@@ -1,6 +1,6 @@
 
 
-import { ToolbarReturn } from "@/components/layouts/tablas/ToolbarReturn";
+import { ToolbarReturn } from "@/components/tablas/ToolbarReturn";
 import { useUsuarios } from "@/hooks/Usuarios"
 import { COLUMN_PROPS, createColumn } from "@/utils/TableCreate";
 import { RemoveRedEye } from "@mui/icons-material";

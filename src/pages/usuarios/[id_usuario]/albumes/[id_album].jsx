@@ -4,8 +4,9 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { Typography, CircularProgress, Box, Container } from '@mui/material';
 import { useUsuarios } from '@/hooks/Usuarios';
-import { ToolbarReturn } from '@/components/layouts/tablas/ToolbarReturn';
+
 import Image from 'next/image';
+import { ToolbarReturn } from '@/components/tablas/ToolbarReturn';
 
 const AlbumPage = () => {
   const { getFotos, fotos, loading, albumes, getAlbums } = useUsuarios()
