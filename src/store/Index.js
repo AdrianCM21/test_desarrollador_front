@@ -1,7 +1,7 @@
 import UsuarioSlice from './UsuarioSlice';
-import * as redux from 'redux';
+import {configureStore}from 'redux';
 
-export const store = redux.configureStore({
+export const store = configureStore({
   reducer: {
    usuarios:UsuarioSlice
   },
