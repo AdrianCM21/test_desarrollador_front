@@ -23,7 +23,7 @@ git clone https://github.com/AdrianCM21/usuarios_admin_front.git
 Luego, navega hasta el directorio del proyecto:
 
 ```bash
-cd test_desarrollador_front
+cd usuarios_admin_front
 ```
 
 Instala las dependencias del proyecto:
